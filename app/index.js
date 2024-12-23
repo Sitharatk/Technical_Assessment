@@ -1,12 +1,12 @@
 import express from 'express';
-import pkg from 'body-parser'; // Correct import for CommonJS module
+import pkg from 'body-parser'; 
 import cors from 'cors';
 import { PrismaClient } from '@prisma/client';
 import dotenv from 'dotenv';
 
-dotenv.config(); // Correct import for `dotenv`
+dotenv.config(); 
 
-const { json } = pkg; // Destructure `json` from the default export of body-parser
+const { json } = pkg; 
 
 const app = express();
 const prisma = new PrismaClient();
@@ -45,29 +45,7 @@ app.get('/students', async (req, res) => {
   }
 });
 
-// app.put('/users/:id', async (req, res) => {
-//   try {
-//     const { id } = req.params;
-//     const { name, email } = req.body;
-//     const user = await prisma.user.update({
-//       where: { id: parseInt(id) },
-//       data: { name, email },
-//     });
-//     res.status(200).json(user);
-//   } catch (error) {
-//     res.status(500).json({ error: error.message });
-//   }
-// });
 
-// app.delete('/users/:id', async (req, res) => {
-//   try {
-//     const { id } = req.params;
-//     await prisma.user.delete({ where: { id: parseInt(id) } });
-//     res.status(204).send();
-//   } catch (error) {
-//     res.status(500).json({ error: error.message });
-//   }
-// });
 
 // eslint-disable-next-line no-undef
 const PORT = process.env.PORT || 5000;
