@@ -17,7 +17,7 @@ function App() {
       <Router>
         <div className="flex h-screen">
          <Section />
-         <div className="ml-60 w-full flex flex-col">
+         <div className=" ml-60 w-full flex flex-col">
             <Header />
             <Routes>
               <Route path="/" element={<Dashboard />} />

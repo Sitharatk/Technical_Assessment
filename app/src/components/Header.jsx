@@ -36,7 +36,7 @@ const Header = () => {
             <img
               src="https://img.freepik.com/free-photo/lifestyle-beauty-fashion-people-emotions-concept-young-asian-female-office-manager-ceo-with-pleased-expression-standing-white-background-smiling-with-arms-crossed-chest_1258-59329.jpg?t=st=1734704516~exp=1734708116~hmac=4ca75bfbba7aa6ebc2f29ccc812e5f7720680a33645e7d77653632751b037c68&w=740"
               alt="Profile"
-              className="w-8 h-8 rounded-full object-cover ml-9"
+              className="w-8 h-8 rounded-full object-cover sm:ml-9"
             />
             <span className="text-sm font-medium mr-5">Adeline H. Dancy</span>
           </div>
