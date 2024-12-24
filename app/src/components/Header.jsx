@@ -38,7 +38,7 @@ const Header = () => {
               alt="Profile"
               className="w-8 h-8 rounded-full object-cover sm:ml-9"
             />
-            <span className="text-sm font-medium mr-5">Adeline H. Dancy</span>
+            <span className="text-sm font-medium sm:mr-5">Adeline H. Dancy</span>
           </div>
         </div>
       </>
